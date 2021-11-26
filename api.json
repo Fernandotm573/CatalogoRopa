@@ -1,0 +1,160 @@
+
+   [ 
+
+    {
+      "articulo": "CAMISETA MEZCLA",
+      "precio": 28.00,
+      "rango": "hasta 3x de R$9,33",
+      "id":  2,
+      "url": "./imagenes/imagens/img_2.png",
+      "colores": [
+        "Amarillo",
+        "Azul",
+        "Blanco",
+        "Cinza",
+        "Naranja",
+        "Cafe",
+        "Violeta",
+        "Turqueza"
+      ]
+    },  
+    {
+      "articulo": "SAIA COURO",
+      "precio":  398.00,
+      "rango": "hasta 5x de R$30,00",
+      "id":  3,
+      "url": "./imagenes/imagens/img_3.png",
+      "colores": [
+        "Amarillo",
+        "Azul",
+        "Blanco",
+        "Cinza",
+        "Naranja",
+        "Cafe",
+        "Violeta",
+        "Turqueza"
+      ]
+    },
+    {
+      "articulo": "CARDIGAN TIGRE",
+      "precio": 398.00,
+      "rango": "hasta 5x de R$30,00",
+      "id":  4,
+      "url": "./imagenes/imagens/img_4.png",
+      "colores": [
+        "Amarillo",
+        "Azul",
+        "Blanco",
+        "Cinza",
+        "Naranja",
+        "Cafe",
+        "Violeta",
+        "Turqueza"
+      ]
+    },
+    {
+      "articulo": "CARDIGA OFF WHITE",
+      "precio": 99.90,
+      "rango": "hasta 3x de R$33,30",
+      "id":  5,
+      "url": "./imagenes/imagens/img_5.png",
+      "colores": [
+        "Amarillo",
+        "Azul",
+        "Blanco",
+        "Cinza",
+        "Naranja",
+        "Cafe",
+        "Violeta",
+        "Turqueza"
+      ]
+    },
+    {
+      "articulo": "BODY LEOPARDO",
+      "precio": 129.90,
+      "rango": "hasta 3x de R$43,43",
+      "id":  6,
+      "url": "./imagenes/imagens/img_6.png",
+      "colores": [
+        "Amarillo",
+        "Azul",
+        "Blanco",
+        "Cinza",
+        "Naranja",
+        "Cafe",
+        "Violeta",
+        "Turqueza"
+      ]
+    },
+      
+    {
+      "articulo": "COSACO PELOS",
+      "precio": 398.00,
+      "rango": "hasta 5x de R$30,00",
+      "id":  7,
+      "url": "./imagenes/imagens/img_7.png",
+      "colores": [
+        "Amarillo",
+        "Azul",
+        "Blanco",
+        "Cinza",
+        "Naranja",
+        "Cafe",
+        "Violeta",
+        "Turqueza"
+      ]
+    },
+    {
+      "articulo": "CROPPET STRIPES",
+      "precio": 120.00,
+      "rango": "hasta 3x de R$40,00",
+      "id":  8,
+      "url": "./imagenes/imagens/img_8.png",
+      "colores": [
+        "Amarillo",
+        "Azul",
+        "Blanco",
+        "Cinza",
+        "Naranja",
+        "Cafe",
+        "Violeta",
+        "Turqueza"
+      ]
+    },
+    {
+      "articulo": "CAMISA TRANSPARENTE",
+      "precio": 398.00,
+      "rango": "hasta 5x de R$30,00",
+      "id":  9,
+      "url": "./imagenes/imagens/img_9.png",
+      "colores": [
+        "Amarillo",
+        "Azul",
+        "Blanco",
+        "Cinza",
+        "Naranja",
+        "Cafe",
+        "Violeta",
+        "Turqueza"
+      ]
+    },
+    {
+      "articulo": "POCHETE CLUTCH",
+      "precio": 99.00,
+      "rango": "hasta 3x de R$33,00",
+      "id":  10,
+      "url": "./imagenes/imagens/img_10.png",
+      "colores": [
+        "Amarillo",
+        "Azul",
+        "Blanco",
+        "Cinza",
+        "Naranja",
+        "Cafe",
+        "Violeta",
+        "Turqueza"
+      ]
+    }
+   
+
+]

@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="estilos.css">
+    <title>Catalogo</title>
+
+</head>
+<body onload="jsonParse()">
+
+           
+  <div class="contenedor-principal">
+
+<header id="header" class="header">
+
+  <div class='container1'>
+    <div class='row1'>
+       <div class='logo-principal'>
+         <img src="./imagenes/imagens/logo-m3.png" alt="logo-principal"> 
+       </div>
+       <div id='menu' class='dos-columnas-carrito'>
+         <ul>
+           <li class="submenu" id='item'>
+              <img src="./imagenes/cart.png" alt="img-carrito">
+
+              <div id="carrito" class="carrito1 ">
+              
+                <table id="lista-carrito" class='table'>
+                  <thead>
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Cantidad</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody id="items"></tbody>
+                  <tfoot>
+                    <tr id="footer">
+                      <th scope="row" colspan="5">Carrito vacío!</th>
+                    </tr>
+                  </tfoot>
+                 </table>
+              </div>
+           </li>
+         </ul>
+       </div>
+    </div>
+ </div>
+</header>
+        
+
+<div class="alojcards">
+  <div class="row" id='cards9'></div>
+</div>
+
+
+<template id="template-footer">
+  <th scope="row" colspan="2">Total Productos</th>
+  <td>10</td>
+  <td>
+      <button class="btn-vaciar" id="vaciar-carrito">
+          Borrar Todo
+      </button>
+  </td>
+  <td class="font">$ <span>5000</span></td>
+</template>
+
+
+
+<template id='template-carrito'>
+  <tr>
+    <th scope="row">id</th>
+    <td>CAMISETA MEZCLA</td>
+    <td>0</td>
+    <td>
+    
+    </td>
+    <td>$ <span>500</span></td>
+  </tr>
+</template>
+
+
+
+<template id="template-card" class="template">
+     <div class="cards">
+      <img src="" alt="" class="card-img">
+        <div class="card-body">
+         <h5>producto</h5>
+          <b> <p>$ precio</p>  </b>  
+         <h6>rango</h6> 
+        <button class="btn-comprar" >Comprar</button>
+      </div>                                    
+</template>
+
+     
+
+<div class="ordenar">
+  <select name="select" id="#seleccionar" class='seleccionar'>
+    <option value="28.00" checked=''>Ordenar por</option>
+    <option value="28.00">Menor Precio</option>
+    <option value="398.00">Mayor Precio</option>
+    <option value="MAS RECIENTES">Mas Recientes</option>
+  </select>
+</div>
+
+<div class='barra-lateral'>
+  <div class="blusas">
+     <h3>Blusas</h3>
+  </div>
+  <div class="titulo-colores">
+    <h4 class="h4">COLORES</h4>
+  </div>
+  
+  <div class='colores'>
+
+   <div class="form-colores" >
+  <form class="color-tono" id='check-color' >
+    <input type="checkbox"  id="amarillo">
+    <label for="amarillo" >Amarillo</label>
+    <br>
+    <input type="checkbox" id="azul" >
+    <label for="azul" >Azul</label>
+    <br>
+    <input type="checkbox" id="blanco" >
+    <label for="blanco" >Blanco</label>
+    <br>
+    <input type="checkbox" id="cinza" >
+    <label for="cinza" >Cinza</label>
+    <br>
+    <input type="checkbox" id="naranja" >
+    <label for="naranja" >Naranja</label>
+  </form>
+</div>
+
+  <div>
+    <select name="select" id="#seleccionar" class="selec-colores">
+      <option value="" checked=''>Ver todos los Colores</option>
+      <option value="amarillo">Cafe</option>
+      <option value="Verde">Violeta</option>
+      <option value="Verde">Turqueza</option>
+      <option value="Verde">Lila</option>
+    </select>
+  </div>
+
+  <h4 class=titulo-tallas>
+    TALLAS
+  </h4>
+<div class='checkbox-tallas'>
+  <input type="checkbox" value="activar">
+  <input type="checkbox" value="activar">
+  <input type="checkbox" value="activar">
+  <input type="checkbox" value="activar">
+  <br>
+  <input type="checkbox" value="activar">
+  <input type="checkbox" value="activar">
+  <input type="checkbox" value="activar">
+  <input type="checkbox" value="activar">
+  <br>
+  <input type="checkbox" value="activar">
+  <input type="checkbox" value="activar">
+  <input type="checkbox" value="activar">
+</div>
+
+
+  <h4 class="titulo-precio">
+    PRECIO
+  </h4>
+<form class="checkbox-precio">
+  <input type="checkbox" id="de R$0 ate R$50">
+  <label for="de R$0 ate R$50">de R$0 ate R$50</label>
+  <br>
+  <input type="checkbox" id="de R$51 ate R150">
+  <label for="de R$51 ate R150">de R$51 ate R150</label>
+  <br>
+  <input type="checkbox" id="de R$151 ate R$300">
+  <label for="de R$151 ate R$300">de R$151 ate R$300</label>
+  <br>
+  <input type="checkbox" id="de R$300 ate R500">
+  <label for="de R$300 ate R500">de R$300 ate R500</label>
+  <br>
+  <input type="checkbox" id="a partir de R$ 01">
+  <label for="a partir de R$ 01">a partir de R$ 01</label>
+</form>
+
+  </div>
+</div>
+
+
+<div class='cargar-mas'> 
+  <button>CARGAR MAS</button>
+</div>
+
+
+<div class="footer-anuncio">
+<footer id='footer'  class="footer">
+  <div class='container5'>
+     <h4>Agencia M3-Agencia de Performace Digital</h4>
+  </div>
+</footer>
+</div>   
+</div>
+
+
+  <script src="./app.js"></script>
+  <script src="./api.json"></script>
+   
+</body>
+</html>
